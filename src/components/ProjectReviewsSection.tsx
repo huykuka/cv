@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBookOpen } from "@fortawesome/free-solid-svg-icons";
 import ProjectCard from "./ProjectCard";
 import ProjectModal from "./ProjectModal";
 
@@ -21,17 +19,7 @@ const ProjectReviewsSection: React.FC = () => {
   const [modalOpen, setModalOpen] = useState(false);
 
   return (
-    <section
-      id="project-reviews"
-      className="bg-white rounded-lg p-6 md:p-10 shadow-md border border-gray-200"
-    >
-      <h2 className="text-2xl text-blue-600 mb-8 border-b-2 border-gray-200 pb-2 flex items-center gap-4">
-        <FontAwesomeIcon
-          icon={faBookOpen}
-          className="text-xl md:text-2xl text-blue-600"
-        />
-        <span>Project Reviews</span>
-      </h2>
+    <section id="project-reviews">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <ProjectCard
           title={sampleProject.title}

@@ -1,6 +1,4 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLanguage } from "@fortawesome/free-solid-svg-icons";
 import vnFlag from "../assets/languages/vn.png";
 import enFlag from "../assets/languages/en.png";
 import deFlag from "../assets/languages/de.png";
@@ -24,17 +22,7 @@ const langs = [
 ];
 
 const LanguagesSection: React.FC = () => (
-  <section
-    id="languages"
-    className=" bg-white rounded-lg p-6 md:p-10 shadow-md border border-gray-200"
-  >
-    <h2 className="text-2xl text-blue-600 mb-8 border-b-2 border-gray-200 pb-2 flex items-center gap-4">
-      <FontAwesomeIcon
-        icon={faLanguage}
-        className="text-xl md:text-2xl text-blue-600"
-      />
-      <span>Languages</span>
-    </h2>
+  <section id="languages">
     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
       {langs.map((lang) => (
         <div

@@ -1,6 +1,4 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
 import JobAccordion from "./JobAccordion";
 import sickLogo from "../assets/companies/sick.svg";
 import rozitekLogo from "../assets/companies/rozitek.jpg";
@@ -14,7 +12,7 @@ const jobs = [
     company: "SICK SENSOR INTELLIGENCE",
     period: "01/2023 – CURRENT",
     summary:
-      "Coordinate with different countries in APEC region, together with the Engineering Team in Vietnam to develop and deliver SICK’s iIOT solutions.",
+      "Coordinate with different countries in APEC region, together with the Engineering Team in Vietnam to develop and deliver SICK’s iIOT solutions. Proficient in deploying and integrating diverse sensors, gateways, and advanced digital solutions across industrial applications",
     projects: [
       {
         icon: "fas fa-globe-americas",
@@ -94,19 +92,13 @@ const jobs = [
 ];
 
 const ExperienceSection: React.FC = () => (
-  <section
-    id="experience"
-    className=" bg-white rounded-lg p-6 md:p-10 shadow-md border border-gray-200"
-  >
-    <h2 className="text-2xl text-blue-600 mb-8 border-b-2 border-gray-200 pb-2 flex items-center gap-4">
-      <FontAwesomeIcon
-        icon={faBriefcase}
-        className="text-xl md:text-2xl text-blue-600"
-      />
-      <span>Work Experience</span>
-    </h2>
+  <section id="experience">
     {jobs.map((job, idx) => (
-      <JobAccordion key={idx} {...job} />
+      <JobAccordion
+        key={idx}
+        {...job}
+        summary={job.summary ? job.summary.replace(/\/(BR|br)/g, "\n") : ""}
+      />
     ))}
   </section>
 );

@@ -1,7 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faCompass,
   faMicrochip,
   faHeart,
   faUsers,
@@ -19,17 +18,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const CareerOrientationSection: React.FC = () => (
-  <section
-    id="career-orientation"
-    className=" bg-white rounded-lg p-6 md:p-10 shadow-md border border-gray-200"
-  >
-    <h2 className="text-2xl text-blue-600 mb-8 border-b-2 border-gray-200 pb-2 flex items-center gap-4">
-      <FontAwesomeIcon
-        icon={faCompass}
-        className="text-xl md:text-2xl text-blue-600"
-      />
-      <span>Career Orientation</span>
-    </h2>
+  <section id="career-orientation">
     <p className="text-sm md:text-base text-gray-700 leading-relaxed text-justify flex items-start gap-2">
       <FontAwesomeIcon icon={faMicrochip} className="text-blue-600 mt-1" />
       My long-term goal is to become a leading expert in the IIoT field,

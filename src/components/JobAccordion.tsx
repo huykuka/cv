@@ -16,7 +16,7 @@ import {
   faHandPaper,
 } from "@fortawesome/free-solid-svg-icons";
 
-import type { IconDefinition } from '@fortawesome/fontawesome-svg-core';
+import type { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 
 const iconMap: Record<string, IconDefinition> = {
   "fas fa-tools": faTools,
@@ -76,7 +76,9 @@ const JobAccordion: React.FC<JobAccordionProps> = ({
     </div>
     <div className="accordion-content px-8 py-6 bg-gray-50 border-t border-gray-200">
       {summary && (
-        <p className="font-bold text-lg text-gray-900 mb-3">{summary}</p>
+        <p className="whitespace-pre-line text-sm md:text-base text-gray-700 leading-relaxed text-justify mb-4">
+          {summary}
+        </p>
       )}
       {projects.length > 0 && (
         <ul className="list-none p-0 m-0">

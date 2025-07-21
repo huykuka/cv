@@ -1,6 +1,4 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCogs } from "@fortawesome/free-solid-svg-icons";
 import luaImg from "../assets/skills/lua.png";
 import mqttImg from "../assets/skills/mqtt.png";
 import k3sImg from "../assets/skills/k3s.png";
@@ -65,17 +63,7 @@ const frameworks = [
 ];
 
 const SkillsSection: React.FC = () => (
-  <section
-    id="skills"
-    className=" bg-white rounded-lg p-6 md:p-10 shadow-md border border-gray-200"
-  >
-    <h2 className="text-2xl text-blue-600 mb-8 border-b-2 border-gray-200 pb-2 flex items-center gap-4">
-      <FontAwesomeIcon
-        icon={faCogs}
-        className="text-xl md:text-2xl text-blue-600"
-      />
-      <span>Languages &amp; Tech Stack</span>
-    </h2>
+  <section id="skills">
     <div className="col-span-full">
       <h3 className="text-lg font-semibold text-gray-900 mb-3">Languages</h3>
       <div className="grid grid-cols-[repeat(auto-fit,minmax(120px,1fr))] gap-6">

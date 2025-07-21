@@ -1,22 +1,10 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 import bkLogo from "../assets/education/bk.png";
 import awsLogo from "../assets/skills/aws.png";
 
 const EducationSection: React.FC = () => (
-  <section
-    id="education"
-    className=" bg-white rounded-lg p-6 md:p-10 shadow-md border border-gray-200"
-  >
-    <h2 className="text-2xl text-blue-600 mb-8 border-b-2 border-gray-200 pb-2 flex items-center gap-4">
-      <FontAwesomeIcon
-        icon={faGraduationCap}
-        className="text-xl md:text-2xl text-blue-600"
-      />
-      <span>Education &amp; Certifications</span>
-    </h2>
-    <div className="flex flex-col gap-4 mt-6">
+  <section id="education">
+    <div className="flex flex-col gap-4">
       <div className="bg-white rounded-lg p-5 shadow-md border border-gray-200">
         <div className="flex items-start space-x-4">
           <img
